@@ -24,27 +24,27 @@ enum Direction {
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
     commands.spawn_bundle(Camera2dBundle::default());
     commands.spawn_bundle(SpriteBundle {
-        texture: asset_server.load("character/up.png"),
+        texture: asset_server.load("character/single/up.png"),
         transform: Transform::from_scale(Vec3::splat(2.0)),
         ..default()
     }).insert(Direction::Up);
     commands.spawn_bundle(SpriteBundle {
-        texture: asset_server.load("character/down.png"),
+        texture: asset_server.load("character/single/down.png"),
         transform: Transform::from_scale(Vec3::splat(2.0)),
         ..default()
     }).insert(Direction::Down);
     commands.spawn_bundle(SpriteBundle {
-        texture: asset_server.load("character/left.png"),
+        texture: asset_server.load("character/single/left.png"),
         transform: Transform::from_scale(Vec3::splat(2.0)),
         ..default()
     }).insert(Direction::Left);
     commands.spawn_bundle(SpriteBundle {
-        texture: asset_server.load("character/right.png"),
+        texture: asset_server.load("character/single/right.png"),
         transform: Transform::from_scale(Vec3::splat(2.0)),
         ..default()
     }).insert(Direction::Right);
     commands.spawn_bundle(SpriteBundle {
-        texture: asset_server.load("character/down.png"),
+        texture: asset_server.load("character/single/down.png"),
         transform: Transform::from_scale(Vec3::splat(2.0)),
         ..default()
     }).insert(Direction::None);

@@ -17,7 +17,7 @@ fn setup(
     asset_server: Res<AssetServer>,
     mut texture_atlases: ResMut<Assets<TextureAtlas>>,
 ) {
-    let texture_handle = asset_server.load("character/down.png");
+    let texture_handle = asset_server.load("character/sheet/down.png");
     let texture_altas = TextureAtlas::from_grid(texture_handle, Vec2::new(48.0, 48.0), 4, 1);
     let texture_altas_handle = texture_atlases.add(texture_altas);
 
